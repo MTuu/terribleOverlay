@@ -28,7 +28,6 @@
             border-style: solid;
             border-width: 5px;
             border-color: rgb(0, 229, 255);
-            bor
         }
 
         .resizeHandle {
@@ -39,6 +38,7 @@
             box-sizing: border-box;
         }
 
+        
         #combatantTable {
             width: 100%;
             table-layout: fixed;
@@ -62,11 +62,14 @@
             color: #ffffff;
             font-weight: 300;
             white-space: nowrap;
+            border-bottom: 1px solid rgb(0, 229, 255);
         }
 
         #combatantTableHeader tr {
             border-bottom: 1px solid rgb(0, 229, 255);
         }
+
+       
 
     </style>
 
@@ -77,9 +80,9 @@
     <script>
 
 
-        var encounterDefine = "{title} / Time: {duration} / DPS: {ENCDPS}";
+        var encounterDefine = "{title}: {duration} <br/>DPS: {ENCDPS}";
 
-        var useHTMLEncounterDefine = false;
+        var useHTMLEncounterDefine = true;
 
         var headerDefine =
         [
